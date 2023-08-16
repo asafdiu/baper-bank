@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baper Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h1 class="text-5xl text-center my-6">Welcome to <span class="text-green-500">Baper</span><span class="text-rose-600">Bank</span></h1>
+
+    <section class="grid sm:grid-cols-1 lg:grid-cols-3 gap-3 px-5 text-white">
+        <div class="text-center bg-lime-500 w-auto py-5 rounded-lg">
+            <h2 class="text-4xl">Deposit</h2>
+            <h1 class="text-5xl">$<span id="old-deposit">00</span></h1>
+        </div>
+        <div class="text-center bg-purple-500 w-auto py-5 rounded-lg">
+            <h2 class="text-4xl">Withdraw</h2>
+            <h1 class="text-5xl">$<span id="old-withdraw">00</span></h1>
+        </div>
+        <div class="text-center bg-sky-500 w-auto py-5 rounded-lg">
+            <h2 class="text-4xl">Balance</h2>
+            <h1 class="text-5xl">$<span id="id-balance">1500</span></h1>
+        </div>
+    </section>
+
+    <section class="mt-4 grid sm:grid-cols-1 lg:grid-cols-2 gap-3 px-5">
+        <div class="bg-orange-500 px-4 py-4 w-auto rounded-lg">
+            <h1 class="text-white text-3xl mb-2">Enter Amount to Deposit</h1>
+            <input type="text" name="" id="id-deposit"> <br>
+            <button id="btn-deposit" class="bg-green-500 px-3 py-2 rounded-lg hover:bg-pink-400 mt-2 mb-3 text-white text-2xl">Deposit</button>
+        </div>
+        <div class="bg-cyan-400 px-4 py-4 w-auto rounded-lg">
+            <h1 class="text-white text-3xl mb-2">Enter Amount to Withdraw</h1>
+            <input type="text" name="" id="id-withdraw"> <br>
+            <button id="btn-withdraw" class="bg-green-500 px-3 py-2 rounded-lg hover:bg-pink-400 mt-2 mb-3 text-white text-2xl">Withdraw</button>
+        </div>
+    </section>
+
+    <script src="js/deposit.js"></script>
+    <script src="js/withdraw.js"></script>
+</body>
+</html>
